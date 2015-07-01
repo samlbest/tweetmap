@@ -1,0 +1,11 @@
+<h2>Streaming Tweets Matching: {{filterQuery}}</h2>
+<form ng-submit="setFilterQuery()">
+  <input type='text' ng-model='filterQuery' />
+  <input type='submit' value='Update' />
+</form>
+
+<ul>
+  <li ng-repeat="tweet in tweets">
+    {{tweet.text}}
+  </li>
+</ul>
